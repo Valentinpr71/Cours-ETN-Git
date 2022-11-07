@@ -106,5 +106,7 @@ Une fois le chemin de la branche distante récupéré, c'est simple:
 git branch [Nom de la branche locale à créer] [Chemin vers la branche distante]
 ```
 
+Attention à bien se mettre à jour comme sur n'importe quelle branche grâce à ```git pull```, peut-être que Xavier a avancé de son côté sur cette branche.
 
+La meilleure pratique est la communication. Mais si vous en êtes incapables, il reste le  ```git pull``` sur la branche ainsi créée avant de créer encore une autre branche à partir de celle-ci. On évite bien des conflits de cette manière. Même si Xavier avance en même temps que Titouan, ils pourront règler leurs conflits au moment du ```merge```, et ne seront pas pris au dépourvu lors d'un ```pull``` anodin.
 
