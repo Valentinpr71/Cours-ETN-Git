@@ -18,6 +18,16 @@ Configuration de votre adresse mail :
 git config --global user.email "[Votre email]"
 ```
 
+Vous pouvez créer un dépot Git local. Rendez-vous sur le dossier qui vous intéresse puis:
+```
+git init
+```
+
+Si vous ne voulez pas que des fichiers présents soient suivis par Git, ajoutez-les dans le fichier .gitignore. 
+D'ailleurs, si vous développez dans un langage, vous pouvez trouver des templates de .gitignore propres à votre langage pour éviter de rajouter tous les fichiers liés et inutiles.
+Voici une bonne adresse pour ça: <https://github.com/github/gitignore>
+
+
 
 
 Si vous souhaitez possedez un Windows et que vous souhaitez afficher des couleurs (recommandé pour visualiser les ajouts et suppressions), installez notepad++.
