@@ -9,14 +9,14 @@
 Rendez vous sur votre terminal de commande. ('''cmd''' sur votre barre de recherche windows ou clique-droit puis "Git Bash Here" sur Windows, Ctrl+Alt+T sur Linux). 
 
 Configuration de votre nom d'utilisateur :
-'''
+```
 git config --global user.name "[votre nom]"
-'''
+```
 
 Configuration de votre adresse mail :
-'''
+```
 git config --global user.email "[Votre email]"
-'''
+```
 
 
 
