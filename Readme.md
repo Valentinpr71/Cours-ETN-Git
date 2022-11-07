@@ -31,24 +31,34 @@ Voici une bonne adresse pour ça: <https://github.com/github/gitignore>
 
 Je ne vais pas vous aider, il s'agit de coder, ajouter des fichier, en supprimer, en modifier...
 
-4. Sélectionnez les fichiers qui vous interessent pour les emmener dans l'espace de <b>transit</b> ou <i>latent space</i>.
+## Gestion de votre projet.
+
+
+1. Sélectionnez les fichiers qui vous interessent pour les emmener dans l'espace de <b>transit</b> ou <i>latent space</i>.
+
 ```
 git add [Nom du ou des fichier(s)]
 ```
+
 ou si vous voulez tout sélectionner : 
+
 ```
 git add *
 ```
+
 Si vous avez selectionné des fichiers que vous ne voulez pas dans l'espace de transit, vous pouvez les enlever facilement:
+
 ```
 git rm --cached [Nom du ou des fichier(s)]
 ```
-ou encore 
+
+ou encore
+ 
 ```
 git reset [Nom du fichier]
 ```
 
-5. Si vos changements vous conviennent, commitez
+2. Si vos changements vous conviennent, commitez
 
 ```
 git commit -m "[Votre message de commit]"
