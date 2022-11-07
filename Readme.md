@@ -4,6 +4,9 @@
 
 1. Installer Git:<https://git-scm.com/downloads> puis suivez les instructions
 
+Si vous souhaitez possedez un Windows et que vous souhaitez afficher des couleurs (recommandé pour visualiser les ajouts et suppressions), installez notepad++.
+
+
 2. Configurer Git
 
 Rendez vous sur votre terminal de commande. ('''cmd''' sur votre barre de recherche windows ou clique-droit puis "Git Bash Here" sur Windows, Ctrl+Alt+T sur Linux). 
@@ -29,7 +32,7 @@ Voici une bonne adresse pour ça: <https://github.com/github/gitignore>
 
 3. Faites ce que vous avez à faire
 
-Je ne vais pas vous aider, il s'agit de coder, ajouter des fichier, en supprimer, en modifier...
+Pour le coup, je ne peux pas vous aider, il s'agit de coder, ajouter des fichier, en supprimer, en modifier... Si vous n'avez pas de mains, c'est complexe mais vous serez certainement en binôme.
 
 ## Gestion de votre projet.
 
@@ -58,13 +61,41 @@ ou encore
 git reset [Nom du fichier]
 ```
 
+N'hesitez pas à effectuer des ```git status``` pour visualiser ou vous en êtes. C'est ici que la couleur peut vous aider.
+
 2. Si vos changements vous conviennent, commitez
 
 ```
 git commit -m "[Votre message de commit]"
 ```
 
+## Gestion des branches
+
+1. Pour créer une branche sur votre répertoire local:
+
+```
+git branch -b [Nom de la branche]
+```
+
+2. Pour changer de branche:
+
+```
+git checkout [Nom de la branche en destination]
+```
+
+3. Visualiser les branches locales et distantes
+
+&rarr Locales:
+
+```
+git branch
+```
+
+&rarr Locales et distantes:
+```
+git branch -a
+```
+
+### Si vous avez 
 
 
-
-Si vous souhaitez possedez un Windows et que vous souhaitez afficher des couleurs (recommandé pour visualiser les ajouts et suppressions), installez notepad++.
