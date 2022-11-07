@@ -27,6 +27,33 @@ Si vous ne voulez pas que des fichiers présents soient suivis par Git, ajoutez-
 D'ailleurs, si vous développez dans un langage, vous pouvez trouver des templates de .gitignore propres à votre langage pour éviter de rajouter tous les fichiers liés et inutiles.
 Voici une bonne adresse pour ça: <https://github.com/github/gitignore>
 
+3. Faites ce que vous avez à faire
+
+Je ne vais pas vous aider, il s'agit de coder, ajouter des fichier, en supprimer, en modifier...
+
+4. Sélectionnez les fichiers qui vous interessent pour les emmener dans l'espace de <b>transit</b> ou <i>latent space</i>.
+```
+git add [Nom du ou des fichier(s)]
+```
+ou si vous voulez tout sélectionner : 
+```
+git add *
+```
+Si vous avez selectionné des fichiers que vous ne voulez pas dans l'espace de transit, vous pouvez les enlever facilement:
+```
+git rm --cached [Nom du ou des fichier(s)]
+```
+ou encore 
+```
+git reset [Nom du fichier]
+```
+
+5. Si vos changements vous conviennent, commitez
+
+```
+git commit -m "[Votre message de commit]"
+```
+
 
 
 
