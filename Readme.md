@@ -85,17 +85,26 @@ git checkout [Nom de la branche en destination]
 
 3. Visualiser les branches locales et distantes
 
-&rarr Locales:
+&rarr; Locales:
 
 ```
 git branch
 ```
 
-&rarr Locales et distantes:
+&rarr; Locales et distantes:
 ```
 git branch -a
 ```
 
-### Si vous avez 
+## Créer une branche locale, en raccord avec une branche distante
+
+Ici, la branche distante existe et on cherche à générer une branche locale qui suit les update de la branche distante (avec des pull). Par exemple, si Xavier et Titouan ont avancé sur une branche de leur projet d'optimisation (définir la fonction objectif par exemple) à l'école depuis l'ordinateur de Xavier. Xavier peut push sa branche sur un répertoire distant et le partager à Titouan. Lorsque Titouan arrive chez lui le soir, il prefere continuer le projet. Il faut donc qu'il génère une branche sur son répertoire distant qui corresponde à cette branche "définition de la fonction objectif". Il faut les raccorder. 
+
+D'abord, on regarde ou se situe la branche distante avec ```git branch -a```. 
+Une fois le chemin de la branche distante récupéré, c'est simple:
+```
+git branch [Nom de la branche locale à créer] [Chemin vers la branche distante]
+```
+
 
 
