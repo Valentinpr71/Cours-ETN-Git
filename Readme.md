@@ -74,7 +74,7 @@ git commit -m "[Votre message de commit]"
 1. Pour créer une branche sur votre répertoire local:
 
 ```
-git branch -b [Nom de la branche]
+git checkout -b [Nom de la branche]
 ```
 
 2. Pour changer de branche:
