@@ -110,3 +110,27 @@ Attention à bien se mettre à jour comme sur n'importe quelle branche grâce à
 
 La meilleure pratique est la communication. Mais si vous en êtes incapables, il reste le  ```git pull``` sur la branche ainsi créée avant de créer encore une autre branche à partir de celle-ci. On évite bien des conflits de cette manière. Même si Xavier avance en même temps que Titouan, ils pourront règler leurs conflits au moment du ```merge```, et ne seront pas pris au dépourvu lors d'un ```pull``` anodin.
 
+## Générer une branche distante à partir d'une branche locale
+
+Si l'on remonte le temps, lorsque Xavier et Titouan bossaient dans la journée, ils ont eu besoin d'effectuer cette manoeuvre pas si compliquée.
+
+Placez-vous sur la branche locale que vous venez de créer. Puis lorsque vous voulez la push sur le repertoire distant, tapez:
+```
+git push --set-upstream origin [Nom de la branche distante à créer]
+```
+Le tour est joué
+
+## Push, Pull, Merge et Conflit.
+
+1. Lorsque vous voulez "pousser" un commit sur une branche du répertoire distant, saisissez:
+```
+git push
+```
+Si la branche locale est bien liée à la branche distante sur laquelle vous essayez de push, ça fonctionne.
+
+Il est possible que Github vous demande de vous connecter si vous n'utilisez pas de clé SSH. Pour se faire, tapez votre identifiant Github et utilisez un token (mot de passe avec date d'expiration) que vous pouvez générer dans "Settings/Developer Setting:Personal access tokens".
+
+2. Pour suivre l'évolution d'une branche liée à une branche distante sur un répertoire local:
+```
+git pull
+```
